@@ -1,0 +1,22 @@
+{
+    "compileOnSave": true,
+    "compilerOptions": {
+        "baseUrl": "",
+        "target": "es5",
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "sourceMap": false,
+        "removeComments": false,
+        "noImplicitAny": false,
+        "allowJs": true
+    },
+    "exclude": [
+    "node_modules",
+    "client",
+    "typings/index.d.ts",
+    "typings/modules",
+    "server",
+    "systemjs.config.js"
+    ],
+    "typescript.tsdk": "node_modules/typescript/lib"
+}
