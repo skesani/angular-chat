@@ -1,22 +1,19 @@
 {
-    "compileOnSave": true,
+    "compileOnSave": false,
     "compilerOptions": {
-        "baseUrl": "",
-        "target": "es5",
-        "module": "commonjs",
+        "outDir": "./dist/out-tsc",
+        "sourceMap": true,
+        "declaration": false,
         "moduleResolution": "node",
-        "sourceMap": false,
-        "removeComments": false,
-        "noImplicitAny": false,
-        "allowJs": true
-    },
-    "exclude": [
-    "node_modules",
-    "client",
-    "typings/index.d.ts",
-    "typings/modules",
-    "server",
-    "systemjs.config.js"
-    ],
-    "typescript.tsdk": "node_modules/typescript/lib"
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "target": "es5",
+        "typeRoots": [
+            "node_modules/@types"
+        ],
+        "lib": [
+            "es2016",
+            "dom"
+        ]
+    }
 }
